@@ -1,0 +1,5 @@
+pdfplumber
+pytesseract
+pdf2image
+pillow
+multilingual-pdf2text
