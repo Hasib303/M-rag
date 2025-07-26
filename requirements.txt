@@ -1,0 +1,16 @@
+langchain
+langchain-openai
+langchain-community
+pinecone
+openai
+pypdf
+PyPDF2
+python-dotenv
+tiktoken
+pdf2image
+easyocr
+Pillow
+fastapi
+uvicorn
+pinecone-client
+langchain-pinecone
