@@ -1,7 +1,6 @@
 langchain
 langchain-openai
 langchain-community
-pinecone
 openai
 pypdf
 PyPDF2

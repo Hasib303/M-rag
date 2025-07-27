@@ -19,19 +19,10 @@ class MultilingualRAGSystem:
     def process_pdf(self, pdf_path: str) -> List[str]:
         documents = self.pdf_extractor.extract_text_from_pdf(pdf_path)
         
-        # Save extracted text to file
-        with open("extracted_text.txt", "w", encoding="utf-8") as f:
-            f.write("=== EXTRACTED TEXT FROM PDF ===\n\n")
-            for i, doc in enumerate(documents):
-                f.write(f"--- Page {i+1} ---\n")
-                f.write(doc.page_content)
-                f.write(f"\n\n{'='*50}\n\n")
-        
         chunks = self.text_chunker.chunk_documents(documents)
         chunk_ids = self.vector_store.add_documents(chunks)
         
         print(f"Processed {len(chunks)} chunks from PDF: {pdf_path}")
-        print("Extracted text saved to: extracted_text.txt")
         return chunk_ids
     
     def query(self, question: str, k: int = None) -> str:
