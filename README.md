@@ -38,7 +38,7 @@ A comprehensive Retrieval-Augmented Generation (RAG) system designed for Bengali
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd "M-RAG"
+   cd "M-rag"
    ```
 
 2. **Create and activate virtual environment**
